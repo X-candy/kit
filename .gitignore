@@ -1,0 +1,4 @@
+.idea
+cmake-build-debug
+src/ui/kit
+src/ui/Makefile

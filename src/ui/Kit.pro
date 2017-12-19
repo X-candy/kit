@@ -21,7 +21,7 @@ SOURCES     +=  main.cpp
 
 FORMS       +=  mainwindow.ui
 
-#RESOURCES   +=  myres.qrc
+RESOURCES   +=  res.qrc
 
 #RC_FILE     =   myicon.rc
 
