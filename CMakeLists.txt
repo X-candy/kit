@@ -11,7 +11,7 @@ ADD_CUSTOM_TARGET(SELF_CMD ALL
 ADD_CUSTOM_COMMAND(TARGET SELF_CMD
         POST_BUILD #PRE_BUILD PRE_LINK POST_BUILD
         COMMENT "\nCreate QT Makefile & make\n "
-        COMMAND qmake-qt4 ${PROJECT_SOURCE_DIR}/src/ui -o ${PROJECT_SOURCE_DIR}/src/ui/Makefile
+        COMMAND qmake ${PROJECT_SOURCE_DIR}/src/ui -o ${PROJECT_SOURCE_DIR}/src/ui/Makefile
         COMMAND make -C ${PROJECT_SOURCE_DIR}/src/ui
         )
 #-----------------------------------------------------------------------------
