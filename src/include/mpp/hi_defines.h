@@ -50,17 +50,11 @@ extern "C"{
 #define LINE_BASE_MASK          (~(LINE_LEN-1))
 static inline void InvalidateDcache(unsigned long addr, unsigned long len)
 {
-    unsigned long end;
-
-    //TODO: cache need rewrite when flush
     return ;
 }
 
 static inline  void FlushDcache(unsigned long addr, unsigned long len)
 {
-    unsigned long end;
-
-    //TODO: cache need rewrite when flush
     return ;
 }
 

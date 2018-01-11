@@ -10,7 +10,6 @@ extern "C"
 #endif /* __cplusplus */
 
 #include "hi_comm_vi.h"
-#include "hi_comm_vb.h"
 
 HI_S32 HI_MPI_VI_SetDevAttr(VI_DEV ViDev, const VI_DEV_ATTR_S *pstDevAttr);
 HI_S32 HI_MPI_VI_GetDevAttr(VI_DEV ViDev, VI_DEV_ATTR_S *pstDevAttr);
@@ -64,23 +63,6 @@ HI_S32 HI_MPI_VI_DisableChnInterrupt(VI_CHN ViChn);
 HI_S32 HI_MPI_VI_GetChnLuma(VI_CHN ViChn, VI_CHN_LUM_S *pstLuma);
 HI_S32 HI_MPI_VI_GetFileHandle(HI_S32 s32Id);
 
-HI_S32 HI_MPI_VI_SetSkipMode(VI_CHN ViChn, VI_SKIP_MODE_E enSkipMode);
-HI_S32 HI_MPI_VI_GetSkipMode(VI_CHN ViChn, VI_SKIP_MODE_E* penSkipMode);
-
-HI_S32 HI_MPI_VI_EnableDllSlave(VI_DEV ViDev);
-HI_S32 HI_MPI_VI_DisableDllSlave(VI_DEV ViDev);
-
-HI_S32 HI_MPI_VI_SetSkipModeEx(VI_CHN ViChn, VI_SKIP_MODE_EX_S* pstModeEx);
-HI_S32 HI_MPI_VI_GetSkipModeEx(VI_CHN ViChn, VI_SKIP_MODE_EX_S* pstModeEx);
-
-HI_S32 HI_MPI_VI_AttachVbPool(VI_CHN ViChn, VB_POOL hVbPool);
-HI_S32 HI_MPI_VI_DetachVbPool(VI_CHN ViChn);
-
-HI_S32 HI_MPI_VI_SetModParam(VI_MOD_PARAM_S *pstModParam);
-HI_S32 HI_MPI_VI_GetModParam(VI_MOD_PARAM_S *pstModParam);
-
-HI_S32 HI_MPI_VI_SetRotate(VI_CHN ViChn, const ROTATE_E enRotate);
-HI_S32 HI_MPI_VI_GetRotate(VI_CHN ViChn, ROTATE_E *penRotate);
 
 #ifdef __cplusplus
 #if __cplusplus
@@ -89,6 +71,4 @@ HI_S32 HI_MPI_VI_GetRotate(VI_CHN ViChn, ROTATE_E *penRotate);
 #endif /* __cplusplus */
 
 #endif /*__MPI_VI_H__ */
-
-
 

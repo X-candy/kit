@@ -1045,3 +1045,5 @@ HI_S32 HI_MPI_IVE_Query(IVE_HANDLE IveHandle, HI_BOOL *pbFinish, HI_BOOL bBlock)
 #endif
 #endif
 #endif/*__MPI_IVE_H__*/
+
+

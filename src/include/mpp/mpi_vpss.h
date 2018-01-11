@@ -21,7 +21,6 @@
 #include "hi_common.h"
 #include "hi_comm_video.h"
 #include "hi_comm_vpss.h"
-#include "hi_comm_vb.h"
 
 #ifdef __cplusplus
 #if __cplusplus
@@ -56,9 +55,6 @@ HI_S32 HI_MPI_VPSS_GetChnParam(VPSS_GRP VpssGrp, VPSS_CHN VpssChn, VPSS_CHN_PARA
 
 HI_S32 HI_MPI_VPSS_SetGrpParam(VPSS_GRP VpssGrp, VPSS_GRP_PARAM_S *pstVpssParam);
 HI_S32 HI_MPI_VPSS_GetGrpParam(VPSS_GRP VpssGrp, VPSS_GRP_PARAM_S *pstVpssParam);
-
-HI_S32 HI_MPI_VPSS_SetGrpAdvancedParam(VPSS_GRP VpssGrp, VPSS_NR_ADVANCED_PARAM_S *pstVpssParam);
-HI_S32 HI_MPI_VPSS_GetGrpAdvancedParam(VPSS_GRP VpssGrp, VPSS_NR_ADVANCED_PARAM_S *pstVpssParam);
 
 HI_S32 HI_MPI_VPSS_SetGrpCrop(VPSS_GRP VpssGrp,  VPSS_CROP_INFO_S *pstCropInfo);
 HI_S32 HI_MPI_VPSS_GetGrpCrop(VPSS_GRP VpssGrp,  VPSS_CROP_INFO_S *pstCropInfo);
@@ -107,15 +103,6 @@ HI_S32 HI_MPI_VPSS_DisableUserFrameRateCtrl(VPSS_GRP VpssGrp);
 
 HI_S32 HI_MPI_VPSS_SetPreScaleMode(VPSS_GRP VpssGrp, VPSS_PRESCALE_MODE_E enVpssPreScaleMode);
 HI_S32 HI_MPI_VPSS_GetPreScaleMode(VPSS_GRP VpssGrp, VPSS_PRESCALE_MODE_E* penVpssPreScaleMode);
-
-HI_S32 HI_MPI_VPSS_AttachVbPool(VPSS_GRP VpssGrp, VPSS_CHN VpssChn, VB_POOL hVbPool);
-HI_S32 HI_MPI_VPSS_DetachVbPool(VPSS_GRP VpssGrp, VPSS_CHN VpssChn);
-
-HI_S32 HI_MPI_VPSS_SetModParam(VPSS_MOD_PARAM_S *pstModParam);
-HI_S32 HI_MPI_VPSS_GetModParam(VPSS_MOD_PARAM_S *pstModParam);
-
-HI_S32 HI_MPI_VPSS_SetRotate(VPSS_GRP VpssGrp, VPSS_CHN VpssChn, ROTATE_E enRotate);
-HI_S32 HI_MPI_VPSS_GetRotate(VPSS_GRP VpssGrp, VPSS_CHN VpssChn, ROTATE_E *penRotate);
 
 
 #ifdef __cplusplus

@@ -49,7 +49,7 @@ HI_S32 HI_MPI_VDEC_GetChnParam(VDEC_CHN VdChn, VDEC_CHN_PARAM_S* pstParam);
 HI_S32 HI_MPI_VDEC_SetProtocolParam(VDEC_CHN VdChn,VDEC_PRTCL_PARAM_S *pstParam);
 HI_S32 HI_MPI_VDEC_GetProtocolParam(VDEC_CHN VdChn,VDEC_PRTCL_PARAM_S *pstParam);
 
-/* s32MilliSec: -1 is block,0 is no block,other positive number is timeout */
+/* s32MilliSec: -1 is block｣ｬ 0 is no block｣ｬother positive number is timeout */
 HI_S32 HI_MPI_VDEC_SendStream(VDEC_CHN VdChn, const VDEC_STREAM_S *pstStream, HI_S32 s32MilliSec);
 
 HI_S32 HI_MPI_VDEC_GetImage(VDEC_CHN VdChn, VIDEO_FRAME_INFO_S *pstFrameInfo,HI_S32 s32MilliSec);
@@ -75,10 +75,6 @@ HI_S32 HI_MPI_VDEC_GetChnVBCnt(VDEC_CHN VdChn, HI_U32 *pu32BlkCnt);
 
 HI_S32 HI_MPI_VDEC_AttachVbPool(VDEC_CHN VdChn, VDEC_CHN_POOL_S *pstPool);
 HI_S32 HI_MPI_VDEC_DetachVbPool(VDEC_CHN VdChn);
-
-HI_S32 HI_MPI_VDEC_SetModParam(VDEC_MOD_PARAM_S *pstModParam);
-HI_S32 HI_MPI_VDEC_GetModParam(VDEC_MOD_PARAM_S *pstModParam);
-
 
 #ifdef __cplusplus
 #if __cplusplus

@@ -50,9 +50,6 @@ HI_S32 HI_MPI_VB_ExitModCommPool(VB_UID_E enVbUid);
 HI_S32 HI_MPI_VB_SetModPoolConf(VB_UID_E enVbUid, const VB_CONF_S *pstVbConf);
 HI_S32 HI_MPI_VB_GetModPoolConf(VB_UID_E enVbUid, VB_CONF_S *pstVbConf);
 
-VB_POOL HI_MPI_VB_CreateVirtualVbPool(HI_U32 u32BlkCnt, const HI_CHAR *pcMmzName);
-VB_BLK HI_MPI_VB_AddBlock(VB_POOL Pool , HI_U32 u32PhyAddr, HI_U32 u32Size);
-
 #ifdef __cplusplus
 #if __cplusplus
 }

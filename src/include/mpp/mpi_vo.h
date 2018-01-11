@@ -182,8 +182,6 @@ HI_S32 HI_MPI_VO_SetHdmiParam(VO_DEV VoDev, VO_HDMI_PARAM_S *pstHdmiParam);
 HI_S32 HI_MPI_VO_SetVtth(VO_DEV VoDev, HI_U32 u32Vtth);
 HI_S32 HI_MPI_VO_GetVtth(VO_DEV VoDev, HI_U32* pu32Vtth);
 
-HI_S32 HI_MPI_VO_QueryDevIntfStatus(VO_INTF_TYPE_E enDevInter,VO_DEVINTF_STATUS_S* pstStatus);
-
 #ifdef __cplusplus
 #if __cplusplus
 }
