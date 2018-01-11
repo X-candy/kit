@@ -9,11 +9,14 @@
   Author		: backup4mark@gmail.com
 ******************************************************************************/
 
+#include <QApplication>
+#include <QTextCodec>
+
 #include <stdio.h>
 #include <pthread.h>
 #include <semaphore.h>
 #include "log.h"
-#include "ui_mainwindow.h"
+#include "mainwindow.h"
 #include "hi_mpi.h"
 
 static void *HISI_Init_Thread(void *arg)
@@ -78,12 +81,16 @@ int main(int argc, char *argv[])
         exit(1);
     }
 
+    //设置编码为utf-8
+    QTextCodec *codec = QTextCodec::codecForName("UTF-8");
+    QTextCodec::setCodecForLocale(codec);
+    QTextCodec::setCodecForCStrings(codec);
+    QTextCodec::setCodecForTr(codec);
+
     //设置Qt界面
     QApplication a(argc, argv);
 
-    QMainWindow w;
-    Ui::MainWindow ui;
-    ui.setupUi(&w);
+    MainWindow w;
     w.show();
 
     return a.exec();

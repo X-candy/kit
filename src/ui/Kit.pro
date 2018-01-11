@@ -20,7 +20,9 @@ LIBS        +=  -ldl -L../../lib -lmpi -ljpeg -lupvqe -ldnvqe -lVoiceEngine
 
 #-------------------------------------------------------------------------------
 
-SOURCES     +=  main.cpp hi_mpi.c
+SOURCES     +=  main.cpp mainwindow.cpp hi_mpi.c
+
+HEADERS     +=  mainwindow.h
 
 FORMS       +=  mainwindow.ui
 
