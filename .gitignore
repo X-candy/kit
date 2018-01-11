@@ -1,4 +1,7 @@
 .idea
 cmake-build-debug
+src/ui/*.o
 src/ui/kit
 src/ui/Makefile
+src/ui/qrc_res.cpp
+src/ui/ui_mainwindow.h

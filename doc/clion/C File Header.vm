@@ -1,0 +1,28 @@
+/******************************************************************************
+
+  Copyright (C), 2018, Vision Soft. Co., Ltd.
+
+ ******************************************************************************
+  File Name     : ${FILE_NAME}
+  Author        : Mark Huang(backup4mark@gmail.com)
+  Created       : ${YEAR}/${MONTH}/${DAY}
+  Description   :
+******************************************************************************/
+
+#[[#ifndef]]# _$NAME.toUpperCase()_H_
+#[[#define]]# _$NAME.toUpperCase()_H_
+
+#[[#ifdef]]# __cplusplus
+#[[#if]]# __cplusplus
+extern "C"{
+#[[#endif]]#
+#[[#endif]]# /* End of #[[#ifdef]]# __cplusplus */
+
+//Add your code...
+
+#[[#ifdef]]# __cplusplus
+#[[#if]]# __cplusplus
+}
+#[[#endif]]#
+#[[#endif]]# /*End of #[[#ifdef]]# __cpluscplus */
+#[[#endif]]#/*__$NAME.toUpperCase()_H_*/

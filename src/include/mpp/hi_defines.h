@@ -48,6 +48,8 @@ extern "C"{
 #define LINE_LEN_BIT            5
 #define LINE_LEN                (1<<LINE_LEN_BIT)
 #define LINE_BASE_MASK          (~(LINE_LEN-1))
+
+#if 0
 static inline void InvalidateDcache(unsigned long addr, unsigned long len)
 {
     return ;
@@ -57,6 +59,7 @@ static inline  void FlushDcache(unsigned long addr, unsigned long len)
 {
     return ;
 }
+#endif
 
 #define DEFAULT_ALIGN     16
 #define MAX_MMZ_NAME_LEN 16

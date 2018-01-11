@@ -326,7 +326,7 @@ HI_S32 AV_COMM_VI_StartChn(VI_CHN vi_chn,  SIZE_S *pstDestSize)
     return HI_SUCCESS;
 }
 
-static int int vi_type = HI_VGA;
+static int vi_type = HI_VGA;
 
 int hi_vi_init(void)
 {
